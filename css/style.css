@@ -38,7 +38,6 @@
 }
 
 /* Base */
-
 body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
@@ -155,6 +154,25 @@ a {
   gap: 64px;
   flex-grow: 1;
   justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-button {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-burger {
+  display: none;
+  @media screen and (max-width: 1200px) {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* Hero-section */
